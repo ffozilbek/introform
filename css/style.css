@@ -1,7 +1,7 @@
 :root {
     --light-color: #ffffff;
     --dark-color: #000000;
-    --main-bg: #F1F4FF;
+    --body-bg: #F1F4FF;
     --footer-bg: #4DC490;
     --bg-color: #655AF2;
     --primary-color: #555555;
@@ -35,7 +35,7 @@ body {
     "slnt" 0;
     line-height: normal;
     flex-direction: column;
-    background-color: var(--link-color);
+    background-color: var(--body-bg);
     color: var(--dark-color);
 }
 
@@ -56,7 +56,6 @@ img {
 
 .main {
     width: 100%;
-    background-color: var(--main-bg);
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -75,9 +74,7 @@ img {
     position: relative;
     border-radius: 20px;
     margin-right: 12px;
-
-}
-.banner-top {
+    overflow: hidden;
 }
 .header-logo {
     font-size: 14px;
@@ -142,8 +139,9 @@ img {
     margin-bottom: 35px;
 }
 .fname-input:focus,.lname-input:focus,.mail-input:focus,.password-input:focus{
-    border-bottom: 1px solid var(--dark-color);
+    border-bottom: 2px solid var(--dark-color);
     color: var(--dark-color);
+    font-weight: 600;
 }
 .password-input {
     margin-bottom: 65px;
@@ -159,9 +157,9 @@ img {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 8px;
+    cursor: pointer;
 }
 .decr {
-    width: 450px;
     font-size: 11px;
     color:var(--primary-color);
     line-height: 15px;

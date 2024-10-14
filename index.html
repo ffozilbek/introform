@@ -36,11 +36,24 @@
                     <h1 class="form-header">
                         Sign up for the course and get free 7 days
                     </h1>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="fname-input" type="text" placeholder="First name" required>
-                        <input class="lname-input" type="text" placeholder="Last name" required>
-                        <input class="mail-input" type="email" placeholder="Email" required>
-                        <input class="password-input" type="password" placeholder="Password" required>
+                    <form class="form" action="https://echo.htmlacademy.ru/courses" method="get">
+                        <div class="input-group">
+                            <input class="fname-input js-input" type="text" placeholder="First name" name="First name">
+                            <span class="form-valid">First Name cannot be empty</span>
+                        </div>
+                        <div class="input-group">
+                            <input class="lname-input js-input" type="text" placeholder="Last name" name="Last name">
+                            <span class="form-valid">Last Name cannot be empty</span>
+                        </div>
+                        <div class="input-group">
+                            <input class="mail-input js-input" type="email" placeholder="Email" name="Email">
+                            <span class="form-valid">Looks like this is not an email</span>
+                        </div>
+                        <div class="input-group">
+                            <input class="password-input js-input" type="password" placeholder="Password"
+                                name="Password">
+                            <span class="form-valid">Password cannot be empty</span>
+                        </div>
                         <button class="button" type="submit">Claim your free trial</button>
                     </form>
                     <div class="decr">By clicking the button, you are agreeing to our <a class="services-link"
